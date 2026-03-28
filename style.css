@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "dots";
+    src: url(./assets/fonts/5by7.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #000000;
+}
+
+/* HEADER */
+
+.start-container{
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.spline-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    z-index: 1;
+    pointer-events: auto; 
+}
+
+.nav-layer, .title-layer {
+    position: relative;
+    z-index: 10;
+    pointer-events: none; 
+}
+
+.nav-layer button, .nav-layer a {
+    pointer-events: auto; 
+}
+
+.spline-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    height: 150px;
+    width: 100%;
+    border-bottom: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: #fff;
+    margin-bottom: -300px;
+}
+
+
+.logo{
+    width: 150px;
+    height: 100px;
+    padding-left: 50px;
+}
+
+nav button{
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px; 
+}
+
+.btn-students{
+    width: 200PX;
+}
+
+nav button:hover{
+    cursor: pointer;
+}
+
+h1{
+    text-align: left;
+    vertical-align: bottom;
+    font-size: 200px;
+    padding-left: 50px;
+    margin-top: 1000px;
+    font-family: "dots";
+    color: aliceblue;
+    font-weight: 400;
+}
+
+
+
+/* ABOUT */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.about-title, h2{
+    text-align: center;
+    /* vertical-align: bottom; */
+    font-size: 100px;
+    padding-left: 50px;
+    font-family: "dots";
+    color: rgb(255, 255, 255);  
+    font-weight: 300;
+}
+
+.ab-descr{
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 60%; */
+}
+
+.avatar{
+    width: 500px;
+    border-radius: 25px;
+}
+
+p{
+    font-family: "Montserrat";
+    color: #fff;
+    font-size: 24px;
+}
+
+.citate {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: #ff0000 5px solid;
+    padding: 25px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.citate-descr{
+    text-align: center;
+}
+
+/* PORTFOLIO */
+
+
+.portfolio h2{
+    padding-top: 50px;
+    text-decoration: underline;
+}
+
+.carousel-inner img{
+    width: 1500px !important;
+    margin: 0 auto;
+}
+
+h3{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    /* padding-left: 100px; */
+    font-family: "dots";
+    color: rgb(255, 255, 255);  
+    font-weight: 300;
+}
