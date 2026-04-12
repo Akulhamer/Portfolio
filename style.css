@@ -26,10 +26,11 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 1000px;
+    /* width: 100%; */
+    height: 45vw;
     z-index: 1;
     pointer-events: auto; 
+    mask-image: radial-gradient(circle, black 0%, transparent 100%)
 }
 
 .nav-layer, .title-layer {
@@ -48,36 +49,36 @@ body{
 }
 
 nav{
-    height: 150px;
+    height: 7.813vw;
     width: 100%;
     border-bottom: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1.042vw;
     border-bottom: #fff;
-    margin-bottom: -300px;
+    /* margin-bottom: -15.625vw; */
 }
 
 
 .logo{
-    width: 150px;
-    height: 100px;
-    padding-left: 50px;
+    width: 7.813vw;
+    height: 5.208vw;
+    padding-left: 2.604vw;
 }
 
 nav button{
-    width: 150px;
-    height: 50px;
+    width: 7.813vw;
+    height: 2.604vw;
     background-color: #fff;
     border: none;
-    border-radius: 10px;
-    font-size: 18px; 
+    border-radius: 0.521vw;
+    font-size: 0.938vw; 
 }
 
 .btn-students{
-    width: 200PX;
+    width: 10.417vw;
 }
 
 nav button:hover{
@@ -87,12 +88,24 @@ nav button:hover{
 h1{
     text-align: left;
     vertical-align: bottom;
-    font-size: 200px;
-    padding-left: 50px;
-    margin-top: 1000px;
+    font-size: 8vw;
+    padding-left: 2.604vw;
+    margin-top: 25vw;
     font-family: "dots";
     color: aliceblue;
     font-weight: 400;
+}
+
+.page2{
+    text-align: left;
+    /* vertical-align: bottom; */
+    font-size: 8vw;
+    padding-left: 2.604vw;
+    /* margin-top: 1000px; */
+    font-family: "dots";
+    color: aliceblue;
+    font-weight: 400;
+    margin: 0 auto;
 }
 
 
@@ -111,8 +124,8 @@ h1{
 .about-title, h2{
     text-align: center;
     /* vertical-align: bottom; */
-    font-size: 100px;
-    padding-left: 50px;
+    font-size: 5.208vw;
+    padding-left: 2.604vw;
     font-family: "dots";
     color: rgb(255, 255, 255);  
     font-weight: 300;
@@ -120,29 +133,29 @@ h1{
 
 .ab-descr{
     display: flex;
-    gap: 100px;
+    gap: 5.208vw;
     justify-content: space-between;
     align-items: center;
     /* width: 60%; */
 }
 
 .avatar{
-    width: 500px;
-    border-radius: 25px;
+    width: 26.042vw;
+    border-radius: 1.302vw;
 }
 
 p{
     font-family: "Montserrat";
     color: #fff;
-    font-size: 24px;
+    font-size: 1.25vw;
 }
 
 .citate {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 2.604vw;
+    margin-bottom: 2.604vw;
     text-align: center;
-    border: #ff0000 5px solid;
-    padding: 25px;
+    border: #ff0000 0.26vw solid;
+    padding: 1.302vw;
     padding-left: 0;
     padding-right: 0;
 }
@@ -155,21 +168,178 @@ p{
 
 
 .portfolio h2{
-    padding-top: 50px;
+    padding-top: 2.604vw;
     text-decoration: underline;
 }
 
 .carousel-inner img{
-    width: 1500px !important;
+    width: 62.5vw !important;
     margin: 0 auto;
 }
 
 h3{
-    margin-top: 50px;
+    margin-top: 2.604vw;
     text-align: center;
-    font-size: 50px;
+    font-size: 2.604vw;
     /* padding-left: 100px; */
     font-family: "dots";
     color: rgb(255, 255, 255);  
     font-weight: 300;
+}
+
+.StudWork h2{
+    padding-top: 2.604vw;
+    text-decoration: underline;
+}
+
+.StudWorkCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.StudWorkCard img{
+    width: 30%;
+    margin-bottom: 1vw;
+}
+
+.geometry{
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: top;
+    gap: 2.604vw;
+    width: 100%; 
+    max-width: 62.5vw; 
+    margin: 0 auto; 
+}
+
+figure {
+    margin: 0; 
+    text-align: center; 
+    font-family: "Montserrat";
+    color: #fff;
+    font-size: 1.563vw;
+}
+
+figure img {
+    border-radius: 1.823vw;
+    width: 100%; 
+    display: block;
+    margin: 0 auto 1.042vw; 
+}
+
+figure img:hover{
+    transform: scale(1.1);
+}
+
+.unity{
+    width: 15vw;
+    margin-top: 1vw;
+}
+
+.unity-capt{
+    text-decoration: line-through;
+    color: #696969;
+}
+
+.cards p{
+    color: #696969;
+}
+
+/* FORMS */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    /* justify-content: center;
+    align-items: center; */
+    color: aliceblue;
+    font-size: 2vw;
+    margin-left: 3vw;
+}
+
+form p{
+  font-size: 2vw;  
+}
+
+input[type="checkbox"] {
+  height: 3vw;
+  width: 2vw;
+}
+
+.form-check-label {
+    display: inline-flex;    
+    align-items: center;     
+    cursor: pointer;         
+    gap: 1vw;               
+}
+
+#submitBtn{
+    width: 15vw;
+    /* height: 7vw; */
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.spaceshipimg{
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+   margin-top: -40vw;
+}
+
+.spaceship{
+    width: 40vw;
+}
+
+hr{
+    color: #ffffff;
+}
+
+/* FOOTER */
+
+footer{
+    height: 5vw;
+    margin-left: 3vw;
+}
+
+.adress, .tel {
+    color: #696969;
+}
+
+/* MODAL */
+
+.modal{
+    --bs-modal-bg: black;
+    --bs-modal-color:white;
+    --bs-modal-width: 60%;
+}
+
+.modal h5{
+    font-size: 1.5vw;
+    font-family: "dots";
+    color: aliceblue;
+    font-weight: 400;
+}
+
+.modal p{
+    font-size: 1vw;
+}
+
+pre {
+    white-space: pre-wrap;       
+    word-wrap: break-word;       
+    overflow-x: auto;            
 }

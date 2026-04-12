@@ -26,3 +26,19 @@ window.addEventListener('mousemove', (event) => {
         }
     }
 });
+
+
+
+
+const checkbox = document.getElementById('policyCheckbox');
+const button = document.getElementById('submitBtn');
+
+checkbox.addEventListener('change', function() {
+  // Кнопка активна, если галочка стоит
+  button.disabled = !this.checked;
+});
+
+
+function sendData() {
+    alert("Данные успешно отправлены!");
+}
