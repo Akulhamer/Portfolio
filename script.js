@@ -29,16 +29,18 @@ window.addEventListener('mousemove', (event) => {
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const checkbox = document.getElementById('policyCheckbox');
+    const button = document.getElementById('submitBtn');
 
-const checkbox = document.getElementById('policyCheckbox');
-const button = document.getElementById('submitBtn');
+    checkbox.addEventListener('change', function() {
+    // Кнопка активна, если галочка стоит
+    button.disabled = !this.checked;
+    });
 
-checkbox.addEventListener('change', function() {
-  // Кнопка активна, если галочка стоит
-  button.disabled = !this.checked;
 });
 
-
-function sendData() {
-    alert("Данные успешно отправлены!");
-}
+function sendData(event) {
+         if (event) event.preventDefault(); 
+        alert("Данные успешно отправлены!");
+    }
