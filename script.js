@@ -33,14 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const checkbox = document.getElementById('policyCheckbox');
     const button = document.getElementById('submitBtn');
 
-    checkbox.addEventListener('change', function() {
-    // Кнопка активна, если галочка стоит
-    button.disabled = !this.checked;
-    });
-
-});
-
-function sendData(event) {
-         if (event) event.preventDefault(); 
-        alert("Данные успешно отправлены!");
+    if (checkbox && button) {
+        checkbox.addEventListener('change', function() {
+            button.disabled = !this.checked;
+        });
     }
+});
